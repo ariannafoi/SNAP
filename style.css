@@ -1,0 +1,69 @@
+/* COLORI */
+/* ARANCIONE: #F69300 */
+/* MARRONE-SCURO: #1B1B1B */
+
+/* FONTS */
+h1, h2, h3, h4, h5, h6, li {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+.space-custom {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+nav{
+    height: 130px;
+    background-color: transparent;
+}
+
+.logo{
+    border: 4px solid #F69300;
+    padding: 20px;
+}
+
+.position-custom{
+    position: relative;
+    bottom: 135px;
+    left: 900px;
+    font-size: 120px;
+    color: #f6940031;
+}
+
+.position1-custom{
+    position: absolute;
+    top: 125px;
+}
+
+
+
+
+
+.img-header2{
+
+    width: auto;
+    height: 55%;
+}
+
+/* FOOTER */
+.footer-custom{
+    width: auto;
+    height: 300px;
+    background-color: #1B1B1B;
+    padding: 60px;
+}
+
+.footer2-custom{
+    padding: 30px 60px 30px 60px;
+    background-color: black;
+    color: white;
+}
+
+.color-custom{
+    color: #F69300;
+}
