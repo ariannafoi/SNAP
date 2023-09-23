@@ -67,3 +67,12 @@ nav{
 .color-custom{
     color: #F69300;
 }
+
+.color-btn-custom{
+    background-color: #F69300;
+}
+
+.color-btn-custom:hover{
+    background-color: white;
+    color:#F69300;
+}
