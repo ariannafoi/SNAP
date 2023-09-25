@@ -10,12 +10,13 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@200&family=Roboto:wght@900&display=swap" rel="stylesheet">
+
 
   </head>
   <body>
 
-<!-- INIZIO -->
+<!-- INIZIO NAVBAR -->
     <nav class="navbar navbar-expand-lg space-custom">
         <div class="container-fluid">
             <a class="navbar-brand logo" href="#" id="homenav"><strong>FOTO</strong>snap</a>
@@ -31,28 +32,36 @@
                 <a class="nav-link pointer" href="#" id="gallery">Gallery</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#" id="about">About</a>
+                <a class="nav-link" href="./about-us.html" id="about">About</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="#" id="contact">Contact</a>
+                </li>
+                <li class = 'toggle-switch'>
+                    <label for="dark-mode-toogle" class="toggle-label-custom">
+                        <input type = 'checkbox' id="dark-mode-toogle" class="toggle-input-custom">
+                        <span class = 'slider'></span>
+                    </label>
                 </li>
             </ul>
             </div>
         </div>
     </nav>
 <!-- FINE NAVBAR -->
-
 <header class="space-custom">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
-                <h2 class="position-custom d-none d-sm-block d-md-block" id="scritta">Home</h2>
-            <h1 class="position1-custom">FOTOsnap
-                <p class="fw-lighter text-300">is specialized in providing</p> 
-            exceptional photography services for beginner photographers
-            </h1>
+            <div class="col-12 mb-4">
+                <h1 class="about-custom">FOTOsnap</h1>
+                <p class="team-custom">provides exceptional photography services</p> 
+                <p class="p-custom">for beginner photographers</p>
             </div>
         </div>
+    </div>
+</header>
+
+<header class="space-custom">
+    <div class="container-fluid">
         <div class="row mt-5">
             <div class="col-12 col-md-3 d-flex align-items-end">
                 <img src="./img/header2.png" alt="" class="img-fluid img-header2 d-none d-sm-block">
@@ -83,7 +92,7 @@
             <div class="col-12 col-md-6">
                 
                 <p class="text-white">
-                    <i class="fa-solid px-2 fa-location-dot color-custom"></i> 2109 WS 09 Oxford 127 ParkVilla Hills, MI 48334
+                    <i class="fa-solid px-2 fa-location-dot color-custom"></i> Cornelia Street 337, TS 48334
                 </p>
                 <p class="text-white">
                     <i class="fa-solid px-2 fa-phone color-custom"></i> +88 019 76456893
@@ -93,7 +102,7 @@
                 </p>
             </div>
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-4">
                 <h5 class="text-white">SUBSCRIBE TO OUR NEWSLETTER</h5>
                 <form>
                     <div class="mb-3">
@@ -109,7 +118,7 @@
                 <p class="text-white">All rights Reserved © Your Company, 2023</p>
             </div>
             <div class="col-12 col-md-6">
-                <p class="text-md-end text-white">Made by <span class="color-custom">Arianna Foi</span></p>
+                <p class="text-md-end text-white">made by <span class="color-custom">Arianna Foi</span></p>
             </div>
         </div>
     </div>

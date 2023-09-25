@@ -3,6 +3,11 @@
 /* MARRONE-SCURO: #1B1B1B */
 
 /* FONTS */
+body{
+  margin: 0;
+  padding: 0;
+}
+
 h1, h2, h3, h4, h5, h6, li {
     font-family: 'Montserrat', sans-serif;
 }
@@ -35,14 +40,10 @@ nav{
     color: #f6940031;
 }
 
-.position1-custom{
+/* .position1-custom{
     position: absolute;
     top: 125px;
-}
-
-
-
-
+} */
 
 .img-header2{
 
@@ -54,14 +55,15 @@ nav{
 .footer-custom{
     width: auto;
     height: 300px;
-    background-color: #1B1B1B;
+    background-color: #312e2e;
     padding: 60px;
+    border-bottom: 1px solid #F69300;
 }
 
 .footer2-custom{
-    padding: 30px 60px 30px 60px;
-    background-color: black;
-    color: white;
+  padding: 30px 60px 30px 60px;
+  background-color: black;
+  color: white;
 }
 
 .color-custom{
@@ -76,3 +78,137 @@ nav{
     background-color: white;
     color:#F69300;
 }
+
+
+
+/* DARK MODE BUTTON */
+:root {
+    --light: #d8dbe0;
+    --dark: #1B1B1B;
+  }
+  
+  .toggle-switch {
+    position: relative;
+    width: 200px;
+    bottom: 5px;
+  }
+  
+  .toggle-label-custom {
+    position: absolute;
+    width: 40%;
+    height: 50px;
+    background-color: var(--dark);
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .toggle-input-custom {
+    position: absolute;
+    display: none;
+  }
+
+  .slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    transition: 0.3s;
+  }
+  
+  .toggle-input-custom:checked ~ .slider {
+    background-color: var(--light);
+  }
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: inset 28px -4px 0px 0px var(--light);
+    background-color: var(--dark);
+    transition: 0.3s;
+  }
+  
+  .toggle-input-custom:checked ~ .slider::before {
+    transform: translateX(35px);
+    background-color: var(--dark);
+    box-shadow: none;
+  }
+
+/* ABOUT US PAGE */
+
+  .image-card{
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .wrapper-custom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ruolo-color{
+    color: #F69300;
+  }
+
+  .about-custom{
+    position: relative;
+    z-index: 99;
+    font-size: 70px;
+    color: #1b1b1b4b;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .team-custom{
+    position: absolute; 
+    top: 170px;
+    margin-left: 30px;
+    font-size: 50px;
+  }
+
+  .p-custom{
+    position: absolute; 
+    top: 210px;
+    font-size: 50px;
+    font-weight: bolder;
+  }
+  
+
+  @media screen and (max-width: 767px) {
+
+    .footer-custom{
+      height: 400px;
+      padding: 40px;
+  }
+
+  .footer2-custom{
+    padding: 30px 40px 30px 40px;
+    background-color: black;
+    color: white;
+  }
+
+    .about-custom{
+      font-size: 80px;
+    }
+
+    .col-custom{
+      text-align: center;
+    }
+
+    .team-custom{
+      position: absolute; 
+      top: 185px;
+      margin-left: 50px;
+      font-size: 50px;
+    }
+  }
+
+  .fluid-img{
+    max-width: 100%;
+    height: auto;
+  }
