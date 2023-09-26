@@ -32,22 +32,36 @@
 //     console.log('contact')
 // })
 
-
-// DARK MODE
+// MODALITA' NOTTE E COME MANTENERE LA PREFERENZA AL CAMBIO PAGINA
 let darkModeToogle = document.querySelector('#dark-mode-toogle');
 let link = document.createElement('link');
 link.rel = 'stylesheet';
 
+function verificyDarkMode() {
+    let darkModeActive = localStorage.getItem('dark_mode');
+    if (darkModeActive === 'true') {
+        darkModeToogle.checked = true;
+        link.href = 'dark-mode.css';
+    }else{
+        darkModeToogle.checked = false;
+        link.href = '';
+    }
+    
+}
+
+verificyDarkMode()
+
 darkModeToogle.addEventListener('change', ()=>{
     if(darkModeToogle.checked){
-        link.href = 'dark-mode.css'
+        link.href = 'dark-mode.css';
+        localStorage.setItem('dark_mode', 'true');
     }else{
-        link.href = ''
+        link.href = '';
+        localStorage.setItem('dark_mode', 'false')
     }
 
     document.head.appendChild(link);
 });
-
 
 
 //ABOUT-US PAGE

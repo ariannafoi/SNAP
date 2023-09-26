@@ -212,3 +212,21 @@ nav{
     max-width: 100%;
     height: auto;
   }
+
+  .cerchio{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-image: url(./img/img1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .cerchio1{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-image: url(./img/img2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
