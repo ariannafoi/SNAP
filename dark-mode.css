@@ -19,6 +19,11 @@ nav{
     color: white;
 }
 
+.h1-home-custom{
+    color: #F69300;
+    z-index: -99;
+}
+
 .about-custom{
     color: #F69300;
     z-index: -99;

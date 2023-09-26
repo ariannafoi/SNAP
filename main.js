@@ -37,7 +37,7 @@ let darkModeToogle = document.querySelector('#dark-mode-toogle');
 let link = document.createElement('link');
 link.rel = 'stylesheet';
 
-function verificyDarkMode() {
+function verifyDarkMode() {
     let darkModeActive = localStorage.getItem('dark_mode');
     if (darkModeActive === 'true') {
         darkModeToogle.checked = true;
@@ -46,10 +46,9 @@ function verificyDarkMode() {
         darkModeToogle.checked = false;
         link.href = '';
     }
-    
 }
 
-verificyDarkMode()
+verifyDarkMode()
 
 darkModeToogle.addEventListener('change', ()=>{
     if(darkModeToogle.checked){
