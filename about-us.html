@@ -5,47 +5,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>SNAP</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- SWIPER CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
         <!-- Personal CSS -->
         <link rel="stylesheet" href="./style.css">
         <!-- GOOGLE FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@200&family=Roboto:wght@900&display=swap" rel="stylesheet">
-    
-      </head>
+    </head>
 <body>
 
 <!-- NAV -->
-    <nav class="navbar navbar-expand-lg space-custom">
-        <div class="container-fluid">
-            <a class="navbar-brand logo" href="#" id="homenav"><strong>FOTO</strong>snap</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav d-flex justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./index.html" id="home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link pointer" href="#" id="gallery">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="./about-us.html" id="about">Our Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html" id="contact">Contact</a>
-                </li>
-                <li class = 'toggle-switch'>
+<nav class="navbar navbar-expand-lg space-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand logo" href="./index.html" id="homenav"><strong>FOTO</strong>snap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class = 'toggle-switch d-flex justify-content-end'>
                     <label for="dark-mode-toogle" class="toggle-label-custom">
                         <input type = 'checkbox' id="dark-mode-toogle" class="toggle-input-custom">
                         <span class = 'slider'></span>
                     </label>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html" id="home">
+                        <h6 class="margin-nav-custom">HOME</h6>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./gallery.html" id="gallery">
+                        <h6 class="margin-nav-custom">GALLERY</h6>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" id="about">
+                        <h6 class="margin-nav-custom">OUR TEAM</h6>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html" id="contact">
+                        <h6 class="margin-nav-custom">CONTACT</h6>
+                    </a>
+                </li>
             </ul>
-            </div>
         </div>
-    </nav>
+    </div>
+</nav>
 <!--FINE NAV  -->
 
 <!-- SECTION -->
@@ -58,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid mt-3">
+        <div class="container mt-3">
             <div class="wrapper">
             <div class="row">
                 <div class="col-12 col-md-3">
@@ -68,53 +77,54 @@
             </div>
         </div>
     </section>
-<!-- FINE SECTIO -->
+<!-- FINE SECTION -->
 
 <!-- FOOTER -->
-    <footer class="mt-5">
-        <div class="container-fluid">
-            <div class="row footer-custom">
-                <div class="col-12 col-md-6">
-                    
-                    <p class="text-white">
-                        <i class="fa-solid px-2 fa-location-dot color-custom"></i> 23 Cornelia St, New York, NY 10014, USA
-                    </p>
-                    <p class="text-white">
-                        <i class="fa-solid px-2 fa-phone color-custom"></i> +88 019 76456893
-                    </p>
-                    <p class="text-white">
-                        <i class="fa-solid px-2 fa-envelope color-custom"></i> scrumbledegg@gmail.com
-                    </p>
-                </div>
-    
-                <div class="col-12 col-md-4">
-                    <h5 class="text-white">SUBSCRIBE TO OUR NEWSLETTER</h5>
-                    <form>
-                        <div class="mb-3">
-                          <input type="email" class="form-control mt-4" placeholder="your@email.com">
-                        </div>
-                        <button type="submit" class="btn color-btn-custom mt-3">Submit</button>
-                    </form>
-                </div>
+<footer>
+    <div class="container-fluid">
+        <div class="row footer-custom">
+            <div class="col-12 col-md-6">
+                
+                <p class="text-white">
+                    <i class="fa-solid px-2 fa-location-dot color-custom"></i> 23 Cornelia St, New York, NY 10014, USA
+                </p>
+                <p class="text-white">
+                    <i class="fa-solid px-2 fa-phone color-custom"></i> +88 019 76456893
+                </p>
+                <p class="text-white">
+                    <i class="fa-solid px-2 fa-envelope color-custom"></i> photosnap@gmail.com
+                </p>
             </div>
-    
-            <div class="row footer2-custom">
-                <div class="col-12 col-md-6">
-                    <p class="text-white">All rights Reserved © Your Company, 2023</p>
-                </div>
-                <div class="col-12 col-md-6">
-                    <p class="text-md-end text-white">made by <span class="color-custom">Arianna Foi</span></p>
-                </div>
+
+            <div class="col-12 col-md-4">
+                <h5 class="text-white">SUBSCRIBE TO OUR NEWSLETTER</h5>
+                <form>
+                    <div class="mb-3">
+                      <input type="email" class="form-control mt-4" placeholder="your@email.com">
+                    </div>
+                    <button type="submit" class="btn color-btn-custom mt-3">Submit</button>
+                </form>
             </div>
         </div>
-    </footer>
+
+        <div class="row footer2-custom">
+            <div class="col-12 col-md-6">
+                <p class="text-white">All rights Reserved © PHOTOsnap, 2023</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="text-md-end text-white">made by <span class="color-custom">Arianna Foi</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
     
-   
-    <!-- PERSONA JS -->
-    <script src="./main.js"></script>
-    <!-- FONT AWESOME -->
-    <script src="https://kit.fontawesome.com/1737bc3b65.js" crossorigin="anonymous"></script>
-    <!-- BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>   
+<!-- FONT AWESOME -->
+<script src="https://kit.fontawesome.com/1737bc3b65.js" crossorigin="anonymous"></script>
+<!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- PERSONAl JS -->
+<script src="./main.js"></script>
 </body>
 </html>

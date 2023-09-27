@@ -63,8 +63,37 @@ darkModeToogle.addEventListener('change', ()=>{
 });
 
 
-//ABOUT-US PAGE
+//CONTACT PAGE
+//SWIPER
 
+//all'interno delle graffe c'è proprio lo swiper
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+    spaceBetween: 30,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      }, 
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+
+
+
+  
+//ABOUT-US PAGE
 let wrapper = document.querySelector('.wrapper');
 wrapper.classList.add('wrapper-custom');
 
@@ -99,4 +128,5 @@ people.forEach((person)=> {
     
     wrapper.appendChild(card); //card allegata al wrapper
 
-})
+});
+

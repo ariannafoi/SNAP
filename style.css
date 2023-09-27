@@ -55,6 +55,28 @@ nav{
   margin-top: 50px;
 }
 
+/* SOTTOLINEATURA TASTI NAVBAR */
+.margin-nav-custom{
+  position: relative;
+}
+
+.margin-nav-custom::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -4px;
+  left: 0;
+  background-color: #F69300;
+  transition: width 0.3s ease-in-out;
+}
+
+.margin-nav-custom:hover::before {
+  width: 100%; /* serve ad espandere verso destra la sottolineatura */
+}
+
+
+
 /* FOOTER */
 .footer-custom{
     width: auto;
@@ -94,7 +116,8 @@ nav{
   .toggle-switch {
     position: relative;
     width: 162px;
-    bottom: -7px;
+    bottom: -5px;
+    margin-right: 10px;
   }
   
   .toggle-label-custom {
@@ -143,7 +166,6 @@ nav{
   }
 
 /* ABOUT US PAGE */
-
   .image-card{
     display: inline-block;
     margin: 10px;
@@ -197,6 +219,12 @@ nav{
     font-weight: bolder;
   }
   
+  .gallery-custom{
+    position: absolute; 
+    top: 170px;
+    margin-left: 30px;
+    font-size: 50px;
+  }
 
   @media screen and (max-width: 767px) {
 
@@ -230,6 +258,13 @@ nav{
       font-size: 50px;
     }
 
+    .gallery-custom{
+      position: absolute; 
+      top: 185px;
+      margin-left: 37px;
+      font-size: 50px;
+    }
+
     .contacts-custom{
       position: absolute; 
       top: 185px;
@@ -242,25 +277,48 @@ nav{
     }
   }
 
-  .fluid-img{
-    max-width: 100%;
-    height: auto;
-  }
+.fluid-img{
+  max-width: 100%;
+  height: auto;
+}
 
-  .cerchio{
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    background-image: url(./img/img1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+
+/* CONTACT PAGE */
+.cerchio{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-image: url(./img/img1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
   
-  .cerchio1{
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    background-image: url(./img/img2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.cerchio1{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-image: url(./img/img2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* GALLERY PAGE */
+
+
+
+/* swiper */
+.swiper{
+  height: 400px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.foto-swiper{
+  position: relative;
+}

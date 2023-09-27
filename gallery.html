@@ -7,13 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- SWIPER CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <!-- Personal CSS -->
-    <link rel="stylesheet" href="./style.css">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@200&family=Roboto:wght@900&display=swap" rel="stylesheet">
-
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="./style.css">
 
   </head>
   <body>
@@ -21,7 +20,7 @@
 <!-- INIZIO NAVBAR -->
     <nav class="navbar navbar-expand-lg space-custom">
         <div class="container-fluid">
-            <a class="navbar-brand logo" href="#" id="homenav"><strong>FOTO</strong>snap</a>
+            <a class="navbar-brand logo" href="./index.html" id="homenav"><strong>FOTO</strong>snap</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,12 +33,12 @@
                         </label>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#" id="home">
+                        <a class="nav-link" aria-current="page" href="./index.html" id="home">
                             <h6 class="margin-nav-custom">HOME</h6>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./gallery.html" id="gallery">
+                        <a class="nav-link active" href="#" id="gallery">
                             <h6 class="margin-nav-custom">GALLERY</h6>
                         </a>
                     </li>
@@ -61,45 +60,56 @@
 <!-- FINE NAVBAR -->
 
 <!-- INIZIO HEADER -->
-<header class="space-custom">
-    <div class="container-fluid">
+<section>
+    <div class="container">
         <div class="row">
-            <div class="col-12 mb-4">
-                <h1 class="h1-home-custom">FOTOsnap</h1>
-                <p class="team-custom d-none d-sm-block">provides exceptional photography services</p> 
-                <p class="p-custom d-none d-sm-block">for beginner photographers</p>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- FINE HEADER -->
-
-
-<section class="space-custom">
-    <div class="container-fluid">
-        <div class="row row-header-custom">
-            <div class="col-12 col-md-3 d-flex align-items-end">
-                <img src="./img/header2.png" alt="" class="img-fluid img-header2 d-none d-sm-block">
-            </div>
-            <div class="col-12 col-md-7">
-                <img src="./img/header1.png" alt="" class="img-fluid">
-            </div>
-            <div class="col-12 col-md-2">
-                <img src="./img/header3.png" alt="" class="img-fluid d-none d-sm-block">
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-12 col-md-3">
-            </div>
-            <div class="col-12 col-md-7">
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam architecto earum aliquam!</h3>
-                <p class="mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo possimus quia tempora exercitationem ipsam laboriosam iusto! Dolore nemo dicta eveniet! Soluta perferendis illo asperiores nihil cum saepe dolorum, sapiente voluptates.</p>
-            </div>
-            <div class="col-12 col-md-2">
+            <div class="col-12 col-custom">
+                <h1 class="about-custom">ABOUT</h1>
+                <h3 class="team-custom">Our Gallery</h3>
             </div>
         </div>
     </div>
 </section>
+
+<section>
+    <div class="container mt-5">
+        <div class="row vh-100">
+            <div class="col-12 col-md-8">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="">
+                        <img src="./img/swiper/img01.png" class="img-fluid">
+                    </div>
+                
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img src="./img/swiper/img02.png" class="img-fluid">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img src="./img/swiper/img03.png" class="img-fluid">
+                    </div>
+                </div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar scrollbar-custom"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FINE HEADER -->
+
+
 
 
 <!-- FOOTER -->

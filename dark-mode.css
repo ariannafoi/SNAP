@@ -13,6 +13,10 @@ nav{
     color: white;
 } 
 
+h6 {
+    color: white;
+}
+
 .logo{
     border: 4px solid #F69300;
     padding: 20px;
