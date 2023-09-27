@@ -2,53 +2,65 @@
 /* ARANCIONE: #F69300 */
 /* MARRONE-SCURO: #1B1B1B */
 
+/* COLORI */
+/* Colore icone */
+.color-custom{
+  color: #F69300;
+}
+
+/* Colore bottone SUBMIT nel footer */
+.color-btn-custom{
+  background-color: #F69300;
+}
+
+.color-btn-custom:hover{
+  background-color: white;
+  color:#F69300;
+}
+
+
 /* FONTS */
+h1, h2, h3, h4, h5, h6, li {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+
+
 body{
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6, li {
-    font-family: 'Montserrat', sans-serif;
-}
-
-p {
-    font-family: 'Raleway', sans-serif;
-    color: black;
-}
-
 .space-custom {
-    padding-right: 20px;
-    padding-left: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 nav{
-    height: 130px;
-    background-color: transparent;
+  height: 130px;
+  background-color: transparent;
 }
 
 .logo{
-    border: 4px solid #F69300;
-    padding: 20px;
+  border: 4px solid #F69300;
+  padding: 20px;
 }
 
 .position-custom{
-    position: relative;
-    bottom: 135px;
-    left: 900px;
-    font-size: 120px;
-    color: #f6940031;
+  position: relative;
+  bottom: 135px;
+  left: 900px;
+  font-size: 120px;
+  color: #f6940031;
 }
 
-/* .position1-custom{
-    position: absolute;
-    top: 125px;
-} */
-
 .img-header2{
-
-    width: auto;
-    height: 55%;
+  width: auto;
+  height: 55%;
 }
 
 .row-header-custom{
@@ -75,6 +87,21 @@ nav{
   width: 100%; /* serve ad espandere verso destra la sottolineatura */
 }
 
+/* HEADER */
+.h1-home-custom{
+  position: relative;
+  z-index: 99;
+  font-size: 70px;
+  color: #1b1b1b4b;
+  font-family: 'Roboto', sans-serif;
+}
+
+.p-custom{
+  position: absolute; 
+  top: 210px;
+  font-size: 50px;
+  font-weight: bolder;
+}
 
 
 /* FOOTER */
@@ -92,145 +119,130 @@ nav{
   color: white;
 }
 
-.color-custom{
-    color: #F69300;
-}
-
-.color-btn-custom{
-    background-color: #F69300;
-}
-
-.color-btn-custom:hover{
-    background-color: white;
-    color:#F69300;
-}
-
 
 
 /* DARK MODE BUTTON */
 :root {
-    --light: #d8dbe0;
-    --dark: #1B1B1B;
-  }
+  --light: #d8dbe0;
+  --dark: #1B1B1B;
+}
   
-  .toggle-switch {
-    position: relative;
-    width: 162px;
-    bottom: -5px;
-    margin-right: 10px;
-  }
+.toggle-switch {
+  position: relative;
+  width: 162px;
+  bottom: -5px;
+  margin-right: 10px;
+}
   
-  .toggle-label-custom {
-    position: absolute;
-    width: 40%;
-    height: 28px;
-    background-color: var(--dark);
-    border-radius: 50px;
-    cursor: pointer;
-  }
+.toggle-label-custom {
+  position: absolute;
+  width: 40%;
+  height: 28px;
+  background-color: var(--dark);
+  border-radius: 50px;
+  cursor: pointer;
+}
   
-  .toggle-input-custom {
-    position: absolute;
-    display: none;
-  }
+.toggle-input-custom {
+  position: absolute;
+  display: none;
+}
 
-  .slider {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-    transition: 0.3s;
-  }
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  transition: 0.3s;
+}
   
-  .toggle-input-custom:checked ~ .slider {
-    background-color: var(--light);
-  }
+.toggle-input-custom:checked ~ .slider {
+  background-color: var(--light);
+}
   
-  .slider::before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 6px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    box-shadow: inset 28px -4px 0px 0px var(--light);
-    background-color: var(--dark);
-    transition: 0.3s;
-  }
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: inset 28px -4px 0px 0px var(--light);
+  background-color: var(--dark);
+  transition: 0.3s;
+}
   
-  .toggle-input-custom:checked ~ .slider::before {
-    transform: translateX(35px);
-    background-color: var(--dark);
-    box-shadow: none;
-  }
+.toggle-input-custom:checked ~ .slider::before {
+  transform: translateX(35px);
+  background-color: var(--dark);
+  box-shadow: none;
+}
+
+
+
+
+/* DA QUI BISOGNA SISTEMARE */
+
 
 /* ABOUT US PAGE */
-  .image-card{
-    display: inline-block;
-    margin: 10px;
-  }
+.image-card{
+  display: inline-block;
+  margin: 10px;
+}
 
-  .wrapper-custom{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
+.wrapper-custom{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
-  .ruolo-color{
-    color: #F69300;
-  }
+.ruolo-color{
+  color: #F69300;
+}
 
-  .h1-home-custom{
-    position: relative;
-    z-index: 99;
-    font-size: 70px;
-    color: #1b1b1b4b;
-    font-family: 'Roboto', sans-serif;
-  }
+/* c'è in tutte le pagine */
+.about-custom{
+  position: relative;
+  z-index: 99;
+  font-size: 70px;
+  color: #1b1b1b4b;
+  font-family: 'Roboto', sans-serif;
+}
 
-  .about-custom{
-    position: relative;
-    z-index: 99;
-    font-size: 70px;
-    color: #1b1b1b4b;
-    font-family: 'Roboto', sans-serif;
-  }
+/* c'è nella home e nella about us */
+.team-custom{
+  position: absolute; 
+  top: 170px;
+  margin-left: 30px;
+  font-size: 50px;
+}
 
-  .team-custom{
-    position: absolute; 
-    top: 170px;
-    margin-left: 30px;
-    font-size: 50px;
-  }
+/* c'è nella contact page*/
+.contacts-custom{
+  position: absolute; 
+  top: 170px;
+  margin-left: 30px;
+  font-size: 50px;
+}
 
-  .contacts-custom{
-    position: absolute; 
-    top: 170px;
-    margin-left: 30px;
-    font-size: 50px;
-  }
+/* c'è nella gallery page */
+.gallery-custom{
+  position: absolute; 
+   top: 170px;
+  margin-left: 30px;
+  font-size: 50px;
+}
 
-  .p-custom{
-    position: absolute; 
-    top: 210px;
-    font-size: 50px;
-    font-weight: bolder;
-  }
-  
-  .gallery-custom{
-    position: absolute; 
-    top: 170px;
-    margin-left: 30px;
-    font-size: 50px;
-  }
 
-  @media screen and (max-width: 767px) {
+/* MEDIA QUERIES */
 
-    .footer-custom{
-      height: 400px;
-      padding: 40px;
+@media screen and (max-width: 767px) {
+
+  .footer-custom{
+    height: 400px;
+    padding: 40px;
   }
 
   .footer2-custom{
@@ -238,48 +250,44 @@ nav{
     background-color: black;
     color: white;
   }
-    .h1-home-custom{
-      font-size: 60px;
-      text-align: center;
-    }
 
-    .about-custom{
-      font-size: 80px;
-    }
-
-    .col-custom{
-      text-align: center;
-    }
-
-    .team-custom{
-      position: absolute; 
-      top: 185px;
-      margin-left: 50px;
-      font-size: 50px;
-    }
-
-    .gallery-custom{
-      position: absolute; 
-      top: 185px;
-      margin-left: 37px;
-      font-size: 50px;
-    }
-
-    .contacts-custom{
-      position: absolute; 
-      top: 185px;
-      margin-left: 10px;
-      font-size: 50px;
-    }
-
-    .row-header-custom{
-      margin-top: 0px;
-    }
+  .h1-home-custom{
+    font-size: 60px;
+    text-align: center;
   }
 
-.fluid-img{
-  max-width: 100%;
-  height: auto;
+  .about-custom{
+    font-size: 80px;
+  }
+
+  .col-custom{
+    text-align: center;
+  }
+
+  .team-custom{
+    position: absolute; 
+    top: 185px;
+    margin-left: 50px;
+    font-size: 50px;
+  }
+
+  .gallery-custom{
+    position: absolute; 
+    top: 185px;
+    margin-left: 37px;
+    font-size: 50px;
+  }
+
+  .contacts-custom{
+    position: absolute; 
+    top: 185px;
+    margin-left: 10px;
+    font-size: 50px;
+  }
+
+  .row-header-custom{
+    margin-top: 0px;
+  }
 }
 
 
@@ -304,10 +312,7 @@ nav{
 
 
 /* GALLERY PAGE */
-
-
-
-/* swiper */
+/* Swiper */
 .swiper{
   height: 400px;
 }
