@@ -20,36 +20,39 @@
   <body>
 
 <!-- INIZIO NAVBAR -->
-<nav class="navbar navbar-expand-lg space-custom">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg space-custom navbar-custom">
+    <div class="container-fluid nav-container">
         <a class="navbar-brand logo" href="./index.html" id="homenav"><strong>FOTO</strong>snap</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class = 'toggle-switch d-flex justify-content-end'>
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div> 
+        <div class="collapse navbar-collapse bg-custom menu-items" id="navbarNav">
+            <ul class="navbar-nav ms-auto dropdown-custom ">
+                <li class = 'toggle-switch d-flex justify-content-end nav-li'>
                     <label for="dark-mode-toogle" class="toggle-label-custom">
                         <input type = 'checkbox' id="dark-mode-toogle" class="toggle-input-custom">
                         <span class = 'slider'></span>
                     </label>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav-li">
                     <a class="nav-link" aria-current="page" href="./index.html" id="home">
                         <h6 class="margin-nav-custom">HOME</h6>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav-li">
                     <a class="nav-link" href="./gallery.html" id="gallery">
                         <h6 class="margin-nav-custom">GALLERY</h6>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav-li">
                     <a class="nav-link" href="./about-us.html" id="about">
                         <h6 class="margin-nav-custom">OUR TEAM</h6>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav-li">
                     <a class="nav-link active" href="#" id="contact">
                         <h6 class="margin-nav-custom">CONTACT</h6>
                     </a>
@@ -62,37 +65,51 @@
 <!-- FINE NAVBAR -->
 
 <!-- INIZIO CONTATTI -->
-<section>
-    <div class="container">
+<section class="pb-5">
+    <div class="container pb-5">
         <div class="row">
             <div class="col-12 col-custom">
                 <h1 class="about-custom" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">ABOUT</h1>
                 <h3 class="contacts-custom" data-aos="fade-left" data-aos-delay="250" data-aos-duration="1000">Our Contacts</h3>
             </div>
             <div class="col-12 col-md-6 mt-5">
-                <h2>Dove trovarci</h2>
                 <div class="d-flex">
-                    <i class="fa-solid px-2 fa-location-dot color-custom"></i>
-                    <p>23 Cornelia St, New York, NY 10014, USA</p>
+                    <i class="fa-solid px-2 fa-2x fa-location-dot color-custom"></i>
+                    <h2>Dove trovarci</h2>
                 </div>
-                <h2>Chiamaci</h2>
+                <p class="px-5 p-size">23 Cornelia St, New York, NY 10014, USA</p>
                 <div class="d-flex">
-                    <i class="fa-solid px-2 fa-location-dot color-custom"></i>
-                    <p>23 Cornelia St, New York, NY 10014, USA</p>
+                    <i class="fa-solid px-2  fa-2x fa-phone color-custom"></i>
+                    <h2>Chiamaci</h2>
                 </div>
+                <p class="px-5 p-size"> +88 019 76456893</p>
                 
-                <h2>Scrivici</h2>
-                <p>photosnap@gmail.com</p>
-                <h2>Orari di apertura</h2>
-                <p>Lunedì-Venerdì 9:00 - 13:00</p>
-                <p>Sabato 9:00 - 12:00</p>
+                <div class="d-flex">
+                    <i class="fa-solid fa-2x px-2 fa-pen color-custom"></i>
+                    <h2 class="">Scrivici</h2>
+                </div>
+                <p class="px-5 p-size">photosnap@gmail.com</p>
+
+                <div class="d-flex">
+                    <i class="fa-solid fa-2x px-2 fa-door-open color-custom"></i>
+                    <h2>Orari di apertura</h2>
+                </div>
+                <p class="px-5 p-size">Lunedì-Venerdì 9:00 - 13:00</p>
+                <p class="px-5 p-size">Sabato 9:00 - 12:00</p>
             </div>
             <div class="col-12 col-md-6 mt-5">
-                <h2>Custumer Care</h2>
-                <p>Non sai come iniziare? Hai bisogno di aiuto per far conoscere i tuoi lavori?</p>
-                <p>Contatta i nostri consulenti</p>
-                <div class="cerchio img-fluid"></div>
-                <div class="cerchio1 img-fluid mt-4"></div>
+                <div class="d-flex">
+                    <i class="fa-solid fa-2x px-2 fa-hand-holding-hand color-custom"></i>
+                    <h2>Customer Care</h2>
+                </div>
+                
+                <p class="px-5 p-size">Non sai come iniziare? Hai bisogno di aiuto per far conoscere i tuoi lavori?</p>
+                <p class="px-5 p-size">Contatta i nostri consulenti</p>
+                <div class="d-flex justify-content-start">
+
+                    <div class="cerchio img-fluid mx-5"></div>
+                    <div class="cerchio1 img-fluid mx-5"></div>
+                </div>
             </div>
         </div>
         

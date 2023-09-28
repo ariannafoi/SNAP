@@ -24,7 +24,7 @@ h6 {
 }
 
 .h1-home-custom{
-    color: #F69300;
+    color: white;
     z-index: -99;
 }
 
@@ -68,4 +68,15 @@ h6 {
 .color-btn-custom:hover{
     background-color: white;
     color:#F69300;
+}
+
+
+@media screen and (max-width: 767px) {
+    .navbar-custom .menu-items {
+        background-color: black; 
+    }
+
+    .nav-container .hamburger-lines .line {
+        background: #F69300;
+    }
 }
