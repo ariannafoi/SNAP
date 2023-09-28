@@ -129,7 +129,28 @@ nav{
   color: white;
 }
 
+.a-footer{
+  color: #F69300;
+}
 
+.a-footer:hover{
+  color: white;
+}
+
+.icon-footer{
+  color: #F69300;
+  font-size: 25px;
+  transform: translateY(0);
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.icon-footer:hover{
+  color: white;
+  transform: translateY(-5px);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
 
 /* DARK MODE BUTTON */
 :root {
@@ -207,6 +228,13 @@ nav{
   color: #F69300;
 }
 
+.zoomed {
+  transform: scale(1.1); /* Modifica la scala per l'effetto di zoom */
+  transition: transform 0.3s ease; /* Aggiungi una transizione per un effetto più fluido */
+  cursor: pointer;
+}
+
+
 /* c'è in tutte le pagine */
 .about-custom{
   position: relative;
@@ -246,14 +274,20 @@ nav{
 @media screen and (max-width: 767px) {
 
   .footer-custom{
-    height: 400px;
+    height: 270px;
     padding: 40px;
+    text-align: center;
+  }
+
+  .icon-footer{
+    padding: 0 15px;
   }
 
   .footer2-custom{
     padding: 30px 40px 30px 40px;
     background-color: black;
     color: white;
+    text-align: center;
   }
 
   .h1-home-custom{
@@ -320,6 +354,7 @@ nav{
 /* Swiper */
 .swiper{
   height: 400px;
+  /* position: relative; */
 }
 
 .swiper-slide img {
@@ -331,6 +366,18 @@ nav{
 
 .foto-swiper{
   position: relative;
+}
+
+.p-gallery{
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  /* padding: 60px 70px; */
+  width: 500px;
+  height: max-content;
+  /* background-color: green; */
+  color: white;
+  z-index: 999;
 }
 
 /* NAVBAR SU MOBILE*/

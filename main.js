@@ -109,9 +109,21 @@ people.forEach((person)=> {
     let card = document.createElement('div'); //creazione dinamica della card
     card.classList.add('image-card'); // aggiunta di una classe CSS per posizionare le card una accanto all'altra
 
+    // Aggiungi l'evento mouseenter per l'effetto di zoom
+    card.addEventListener('mouseenter', function () {
+        card.classList.add('zoomed');
+    });
+
+    // Aggiungi l'evento mouseleave per rimuovere l'effetto di zoom
+    card.addEventListener('mouseleave', function () {
+        card.classList.remove('zoomed');
+    });
+    
     let immagine = document.createElement('img'); //creazione dinamica delle immagini
     immagine.src = person.photo; //immagini che vengono prese dall'array di oggetti definito sopra
     immagine.classList.add('fluid-img');
+
+
 
     card.appendChild(immagine); //immagine allegata alla card
 
