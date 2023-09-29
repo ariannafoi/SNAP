@@ -67,7 +67,9 @@ nav{
   margin-top: 50px;
 }
 
-
+.swiper-scrollbar-drag{
+  background: #F69300;
+}
 
 
 
@@ -117,7 +119,7 @@ nav{
 /* FOOTER */
 .footer-custom{
     width: auto;
-    height: 300px;
+    height: 330px;
     background-color: #312e2e;
     padding: 60px;
     border-bottom: 1px solid #F69300;
@@ -229,8 +231,9 @@ nav{
 }
 
 .zoomed {
-  transform: scale(1.1); /* Modifica la scala per l'effetto di zoom */
-  transition: transform 0.3s ease; /* Aggiungi una transizione per un effetto più fluido */
+
+  transform: scale(1.1); /* modifica scala per l'effetto di zoom */
+  transition: transform 0.3s ease; /*per un effetto più fluido*/
   cursor: pointer;
 }
 
@@ -244,26 +247,10 @@ nav{
   font-family: 'Roboto', sans-serif;
 }
 
-/* c'è nella home e nella about us */
-.team-custom{
+
+.text-that-changes{
   position: absolute; 
   top: 170px;
-  margin-left: 30px;
-  font-size: 50px;
-}
-
-/* c'è nella contact page*/
-.contacts-custom{
-  position: absolute; 
-  top: 170px;
-  margin-left: 30px;
-  font-size: 50px;
-}
-
-/* c'è nella gallery page */
-.gallery-custom{
-  position: absolute; 
-   top: 170px;
   margin-left: 30px;
   font-size: 50px;
 }
@@ -274,7 +261,7 @@ nav{
 @media screen and (max-width: 767px) {
 
   .footer-custom{
-    height: 270px;
+    height: 300px;
     padding: 40px;
     text-align: center;
   }
@@ -324,6 +311,13 @@ nav{
     font-size: 50px;
   }
 
+  .portfolio-custom{
+    position: absolute; 
+     top: 185px;
+    margin-left: 12px;
+    font-size: 50px;
+  }
+
   .row-header-custom{
     margin-top: 0px;
   }
@@ -353,31 +347,78 @@ nav{
 /* GALLERY PAGE */
 /* Swiper */
 .swiper{
+  width: 100%;
   height: 400px;
-  /* position: relative; */
+  position: relative;
+  top: 30px;
+  cursor: grab;
 }
 
 .swiper-slide img {
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.foto-swiper{
-  position: relative;
+@media screen and (max-width: 767px) {
+  .img-custom-mobile{
+    margin-top: 30px;
+  }
 }
 
-.p-gallery{
-  position: absolute;
-  bottom: 40px;
-  left: 40px;
-  /* padding: 60px 70px; */
-  width: 500px;
-  height: max-content;
-  /* background-color: green; */
-  color: white;
-  z-index: 999;
+.classe-prova{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.positioning{
+  text-align: center;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .positioning{
+    position: absolute;
+    width: 500px;
+    left: 100px;
+    top: 100px;
+    text-align: center;
+  }
+
+  .div-dimension{
+    height: 400px;
+    width: 300px;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+
+  .div-dimension img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease;
+  }
+  .div-dimension:hover img{
+    transform: scale(1.1); 
+  }
+  
+  .div-dimension-grande{
+    height: 400px;
+    width: 630px;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+
+  .div-dimension-grande img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease;
+  }
+  .div-dimension-grande:hover img{
+    transform: scale(1.1); 
+  }
+  
 }
 
 /* NAVBAR SU MOBILE*/
@@ -479,5 +520,4 @@ nav{
 
 .p-size{
   font-size: 20px;
-  
 }
