@@ -33,33 +33,29 @@
 // })
 
 // MODALITA' NOTTE E COME MANTENERE LA PREFERENZA AL CAMBIO PAGINA
-let darkModeToogle = document.querySelector('#dark-mode-toogle');
-let link = document.createElement('link');
-link.rel = 'stylesheet';
+let darkModeToggle = document.querySelector('#dark-mode-toggle');
 
 function verifyDarkMode() {
     let darkModeActive = localStorage.getItem('dark_mode');
     if (darkModeActive === 'true') {
-        darkModeToogle.checked = true;
-        link.href = 'dark-mode.css';
-    }else{
-        darkModeToogle.checked = false;
-        link.href = '';
+        document.body.classList.add('active-dark');
+        darkModeToggle.checked = true;
+    } else {
+        document.body.classList.remove('active-dark');
+        darkModeToggle.checked = false;
     }
 }
 
-verifyDarkMode()
+verifyDarkMode();
 
-darkModeToogle.addEventListener('change', ()=>{
-    if(darkModeToogle.checked){
-        link.href = 'dark-mode.css';
+darkModeToggle.addEventListener('change', () => {
+    if (darkModeToggle.checked) {
+        document.body.classList.add('active-dark');
         localStorage.setItem('dark_mode', 'true');
-    }else{
-        link.href = '';
-        localStorage.setItem('dark_mode', 'false')
+    } else {
+        document.body.classList.remove('active-dark');
+        localStorage.setItem('dark_mode', 'false');
     }
-
-    document.head.appendChild(link);
 });
 
 

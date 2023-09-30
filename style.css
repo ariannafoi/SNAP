@@ -3,19 +3,17 @@
 /* MARRONE-SCURO: #1B1B1B */
 
 /* COLORI */
+
+body{
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
 /* Colore icone */
 .color-custom{
   color: #F69300;
-}
-
-/* Colore bottone SUBMIT nel footer */
-.color-btn-custom{
-  background-color: #F69300;
-}
-
-.color-btn-custom:hover{
-  background-color: white;
-  color:#F69300;
 }
 
 
@@ -27,12 +25,6 @@ h1, h2, h3, h4, h5, h6, li {
 p {
   font-family: 'Raleway', sans-serif;
   color: black;
-}
-
-
-body{
-  margin: 0;
-  padding: 0;
 }
 
 .space-custom {
@@ -67,10 +59,16 @@ nav{
   margin-top: 50px;
 }
 
-.swiper-scrollbar-drag{
-  background: #F69300;
+.posizione-padre-header{
+  position: relative;
+  left: 20px;
 }
 
+.posizione-figlio-header{
+  position: absolute;
+  bottom: 150px;
+  left: 150px;
+}
 
 
 /* SOTTOLINEATURA TASTI NAVBAR */
@@ -154,64 +152,6 @@ nav{
   cursor: pointer;
 }
 
-/* DARK MODE BUTTON */
-:root {
-  --light: #d8dbe0;
-  --dark: #1B1B1B;
-}
-  
-.toggle-switch {
-  position: relative;
-  width: 162px;
-  bottom: -5px;
-  margin-right: 10px;
-}
-  
-.toggle-label-custom {
-  position: absolute;
-  width: 40%;
-  height: 28px;
-  background-color: var(--dark);
-  border-radius: 50px;
-  cursor: pointer;
-}
-  
-.toggle-input-custom {
-  position: absolute;
-  display: none;
-}
-
-.slider {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50px;
-  transition: 0.3s;
-}
-  
-.toggle-input-custom:checked ~ .slider {
-  background-color: var(--light);
-}
-  
-.slider::before {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 6px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  box-shadow: inset 28px -4px 0px 0px var(--light);
-  background-color: var(--dark);
-  transition: 0.3s;
-}
-  
-.toggle-input-custom:checked ~ .slider::before {
-  transform: translateX(35px);
-  background-color: var(--dark);
-  box-shadow: none;
-}
-
 
 /* ABOUT US PAGE */
 .image-card{
@@ -262,6 +202,7 @@ nav{
 
   .footer-custom{
     height: 300px;
+    width: auto;
     padding: 40px;
     text-align: center;
   }
@@ -286,7 +227,7 @@ nav{
     font-size: 80px;
   }
 
-  .col-custom{
+  .center-text-custom{
     text-align: center;
   }
 
@@ -360,6 +301,10 @@ nav{
   object-fit: contain;
 }
 
+.swiper-scrollbar-drag{
+  background: #F69300;
+}
+
 @media screen and (max-width: 767px) {
   .img-custom-mobile{
     margin-top: 30px;
@@ -421,6 +366,10 @@ nav{
   
 }
 
+.p-size{
+  font-size: 20px;
+}
+
 /* NAVBAR SU MOBILE*/
 
 .checkbox{
@@ -440,7 +389,7 @@ nav{
     opacity: 0;
     cursor: pointer;
   }
-  
+
   .nav-container .hamburger-lines {
     display: block;
     height: 26px;
@@ -475,15 +424,16 @@ nav{
     transform-origin: 0% 100%;
     transition: transform 0.4s ease-in-out;
   }
-  
+
   .navbar-custom .menu-items {
     padding-top: 60px;
-    height: 100vh;
+    height: 85vh;
     width: 100%;
     transform: translate(150%);
     display: flex;
     flex-direction: column;
-    margin-right: -40px;
+    text-align: center;
+    /* margin-right: -40px; */
     transition: transform 0.5s ease-in-out;
     background-color: white;
     color: #1B1B1B;
@@ -518,6 +468,137 @@ nav{
   }
 }
 
-.p-size{
-  font-size: 20px;
+
+
+/* BOTTONE MODALITA' NOTTE*/
+.switch {
+  margin-right: 7px;
+  position: relative;
+  top: 5px;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #F69300;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ccc;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(23px);
+  -ms-transform: translateX(23px);
+  transform: translateX(23px);
+}
+
+/* STILE PER MODALITA' NOTTE */
+body.active-dark{
+  background-color: #000000;
+  color: white;
+}
+
+body.active-dark p {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+body.active-dark nav {
+  height: 130px;
+  color: white;
+}
+
+body.active-dark h6 {
+  color: white;
+}
+
+body.active-dark .logo{
+  border: 4px solid #F69300;
+  padding: 20px;
+  color: white;
+}
+
+body.active-dark .h1-home-custom{
+  color: white;
+  z-index: -99;
+}
+
+body.active-dark .about-custom{
+  color: #F69300;
+  z-index: -99;
+}
+
+
+body.active-dark .position-custom{
+  position: relative;
+  bottom: 135px;
+  left: 900px;
+  font-size: 120px;
+  color: #f6940031;
+}
+
+body.active-dark .ruolo-color{
+  color: #F69300;
+}
+
+body.active-dark .footer-custom{
+  width: auto;
+  height: 300px;
+  background-color: #4a4747;
+  padding: 60px;
+}
+
+body.active-dark .footer2-custom{
+  padding: 30px 60px 30px 60px;
+  background-color: black;
+  color: white;
+}
+
+body.active-dark .color-custom{
+  color: #F69300;
+}
+
+
+@media screen and (max-width: 767px) {
+  body.active-dark .navbar-custom .menu-items {
+      background-color: black; 
+  }
+
+  body.active-dark .nav-container .hamburger-lines .line {
+      background: #F69300;
+  }
 }
