@@ -204,10 +204,6 @@ nav{
   font-size: 50px;
 }
 
-.altezza-foto{
-  height: 230px;
-}
-
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 767px) {
