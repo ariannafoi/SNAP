@@ -246,28 +246,28 @@ nav{
   }
 
   .team-custom{
-    position: absolute; 
+    /* position: absolute;  */
     top: 185px;
     left: 36px;
     font-size: 50px;
   }
 
   .gallery-custom{
-    position: absolute; 
+    /* position: absolute;  */
     top: 185px;
-    left: 15px;
+    left: 24px;
     font-size: 50px;
   }
 
   .contacts-custom{
-    position: absolute; 
+    /* position: absolute; */
     top: 185px;
     left: 0;
     font-size: 50px;
   }
 
   .portfolio-custom{
-    position: absolute; 
+    /* position: absolute;  */
     top: 185px;
     left: 0;
     font-size: 50px;
