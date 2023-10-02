@@ -193,6 +193,7 @@ nav{
   font-size: 70px;
   color: #1b1b1b4b;
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 }
 
 
@@ -239,6 +240,7 @@ nav{
 
   .about-custom{
     font-size: 70px;
+    overflow: hidden;
   }
 
   .center-text-custom{
@@ -250,6 +252,7 @@ nav{
     top: 185px;
     left: 36px;
     font-size: 50px;
+    overflow: hidden;
   }
 
   .gallery-custom{
@@ -257,6 +260,7 @@ nav{
     top: 185px;
     left: 24px;
     font-size: 50px;
+    overflow: hidden;
   }
 
   .contacts-custom{
@@ -264,6 +268,7 @@ nav{
     top: 185px;
     left: 0;
     font-size: 50px;
+    overflow: hidden;
   }
 
   .portfolio-custom{
@@ -271,6 +276,7 @@ nav{
     top: 185px;
     left: 0;
     font-size: 50px;
+    overflow: hidden;
   }
 
   .row-header-custom{
