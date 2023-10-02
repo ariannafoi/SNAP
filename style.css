@@ -200,6 +200,11 @@ nav{
 
 @media screen and (max-width: 767px) {
 
+  .logo{
+    border: 4px solid #F69300;
+    padding: 10px;
+  }
+
   .footer-custom{
     height: 300px;
     width: auto;
