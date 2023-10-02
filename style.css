@@ -9,6 +9,7 @@ body{
   color: black;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Colore icone */
@@ -116,11 +117,11 @@ nav{
 
 /* FOOTER */
 .footer-custom{
-    width: auto;
-    height: 330px;
-    background-color: #312e2e;
-    padding: 60px;
-    border-bottom: 1px solid #F69300;
+  width: auto;
+  height: 330px;
+  background-color: #312e2e;
+  padding: 60px;
+  border-bottom: 1px solid #F69300;
 }
 
 .footer2-custom{
@@ -224,6 +225,7 @@ nav{
   }
 
   .h1-home-custom{
+    position: static;
     font-size: 60px;
     text-align: center;
   }
@@ -289,6 +291,41 @@ nav{
   background-size: cover;
 }
 
+.row-one-contact{
+  height: 30vh;
+  background-color: #F69300;
+  position: relative;
+}
+
+.row-two-contact{
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .row-two-contact{
+    position: static;
+  }
+
+}
+
+.contact-card{
+  width: 280px;
+  height: 250px;
+  border: none;
+  border-radius: 0;
+  background-color: white;
+}
+
+.color-contact{
+  color: #F69300;
+}
+
+.footer-contact{
+  margin-top: 250px;
+}
 
 /* GALLERY PAGE */
 /* Swiper */
@@ -583,7 +620,7 @@ body.active-dark .ruolo-color{
 body.active-dark .footer-custom{
   width: auto;
   height: 300px;
-  background-color: #4a4747;
+  background-color: #3a3636;
   padding: 60px;
 }
 
@@ -607,3 +644,13 @@ body.active-dark .color-custom{
       background: #F69300;
   }
 }
+
+body.active-dark .contact-card{
+  width: 280px;
+  height: 250px;
+  border: none;
+  border-radius: 0;
+  background-color: black;
+  color: white;
+}
+
