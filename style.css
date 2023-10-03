@@ -205,7 +205,7 @@ nav{
   .footer-custom{
     height: 300px;
     width: auto;
-    padding-top: 35px;
+    padding: 35px 0;
     text-align: center;
   }
 
