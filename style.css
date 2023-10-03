@@ -205,12 +205,9 @@ nav{
   .footer-custom{
     height: 300px;
     width: auto;
-    padding: 35px 0;
+    padding-top: 35px;
+    padding-bottom: 35px;
     text-align: center;
-  }
-
-  .icon-footer{
-    padding: 0 15px;
   }
 
   .footer2-custom{
