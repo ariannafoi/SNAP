@@ -47,6 +47,7 @@ nav{
 @media screen and (max-width: 767px) {
   .logo{
     margin-top: 10px;
+    padding: 10px;
   }
 }
 
@@ -216,7 +217,7 @@ nav{
   .footer-custom{
     height: 300px;
     width: auto;
-    padding: 40px;
+    padding-top: 35px;
     text-align: center;
   }
 
@@ -619,7 +620,7 @@ body.active-dark h6 {
 
 body.active-dark .logo{
   border: 4px solid #F69300;
-  padding: 20px;
+  padding: 10px;
   color: white;
 }
 
