@@ -1,37 +1,3 @@
-// CAMBIO SCRITTA AL CLICK
-
-// let scritta = document.querySelector('#scritta');
-// let changeTextHomeNav = document.querySelector('#homenav');
-// let changeTextHome = document.querySelector('#home');
-// let changeTextGallery = document.querySelector('#gallery');
-// let changeTextAbout = document.querySelector('#about');
-// let changeTextContact = document.querySelector('#contact');
-
-// changeTextHomeNav.addEventListener('click', ()=>{
-//     scritta.textContent = 'Home'
-//     console.log('home')
-// })
-
-// changeTextHome.addEventListener('click', ()=>{
-//     scritta.textContent = 'Home'
-//     console.log('home')
-// })
-
-// changeTextGallery.addEventListener('click', ()=>{
-//     scritta.textContent = 'Gallery'
-//     console.log('gallery')
-// })
-
-// changeTextAbout.addEventListener('click', ()=>{
-//     scritta.textContent = 'About'
-//     console.log('about')
-// })
-
-// changeTextContact.addEventListener('click', ()=>{
-//     scritta.textContent = 'Contact'
-//     console.log('contact')
-// })
-
 // MODALITA' NOTTE E COME MANTENERE LA PREFERENZA AL CAMBIO PAGINA
 let darkModeToggle = document.querySelector('#dark-mode-toggle');
 
@@ -78,7 +44,7 @@ const swiper = new Swiper('.swiper', {
     scrollbar: {
       el: '.swiper-scrollbar',
     },
-  });
+});
 
 
 
